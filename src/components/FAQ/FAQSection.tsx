@@ -1,6 +1,5 @@
 import React from "react";
-import "./FAQStyling.css";
-import Faq from "react-faq-component";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const FAQSection = () => {
   const data = {
@@ -72,23 +71,19 @@ const FAQSection = () => {
     ],
   };
 
-  const styles = {
-    bgColor: "black",
-    titleTextColor: "White",
-    rowTitleColor: "white",
-    rowContentColor: "white",
-    arrowColor: "#ED1C24",
-    rowContentTextSize: "20px",
-  };
-
-  const config = {
-    animate: true,
-    tabFocus: true,
-  };
-
   return (
-    <div className="faq-row-wrapper px-5">
-      <Faq data={data} styles={styles} config={config}></Faq>
+    <div className="mx-0 w-full">
+      <div className="w-2/3 mx-auto">
+
+        <Accordion type={"single"} collapsible>
+          {data.rows.map((item, index) => (
+            <AccordionItem value={index.toString()}>
+              <AccordionTrigger><h1 className="text-2xl">{item.title}</h1></AccordionTrigger>
+              <AccordionContent>{item.content}</AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </div>
     </div>
   );
 };
