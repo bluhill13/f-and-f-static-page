@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Coolvetica Bold:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+	font-family: 'Handel Gothic Bold';
+	src: url('./fonts/Handel\ Gothic\ D\ Bold.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Coolvetica Bold';
+	src: url('./fonts/coolvetica-rg.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Space Grotesk';
+	src: url('./fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('./fonts/Lato-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Coolvetica Bold', 'Coolvetica Bold', sans-serif;
+  background-color: black;
+}
+
+.hero {
+  background: url(./images/hero-bg.svg) top center no-repeat;
+  background-size: cover;
+}
+
+.footer-text.id {
+font-family: "Handel Gothic Bold", sans-serif;
+}
+
+.video {
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	z-index: 1;
+}
+
+.videocontent {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 3.2em;
+}
+
+.location-button {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.locationbutton {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	border: 3px solid #34b302;
+	padding: 0.5em;
+	border-radius: 20px;
+	margin-top: 30px;
+	font-size: 30px;
+	z-index: 999;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.locationbutton:hover {
+	background-color: rgba(0, 0, 0, 1);
+}
+
+.heading-video {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.heading-video-under-text {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.footerimage {
+	margin-bottom: 30px;
+}
+
+.info-title {
+font-family: Impact, sans-serif;
+}
+
+.infotext{
+font-size: 25px;
+	
+}
+
+.infoimagecontainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70vh;
+}
+
+.infoimage {
+	border-radius: 20px;
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
+	height: auto;
+}
+
+.vaareklubber{
+	font-size: 50px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.andreklubber {
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.menu-text {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.all-flags{
+		width: 2em;
+		height: 2em;
+}
+.all-flags-container {
+	display: flex;
+	justify-content: center;
+}
+
+.overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.lokasjonerkontainer {
+	background: url(./images/images/backkali.png) top center no-repeat;
+	background-size: cover;
+}
+
+.footer {
+  	background-size: cover;
+	background-color: black;
+}
+
+.cta {
+  background: linear-gradient(rgba(2,2,2,.7),rgba(0,0,0,.7)),url(https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) fixed center center;
+}
+
+.location-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+@media (max-width: 600px) {
+
+	/* For small screens */
+	.location-list {
+		flex-direction: column;
+	}
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+	/* For medium screens */
+	.location-list>div {
+		flex-basis: calc(50% - 10px);
+		/* 2 items per row */
+	}
+}
+
+@media (min-width: 1025px) {
+
+	/* For large screens */
+	.location-list>div {
+		flex-basis: calc(33.333% - 10px);
+		/* 3 items per row */
+	}
+}
+
+

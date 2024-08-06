@@ -1,0 +1,22 @@
+.location-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	border: 2px solid #ED1C24;
+	border-radius: 20px;
+	padding: 1em;
+	margin: 10px 10px 10px 10px;
+	background-color: black;
+	font-size: x-large;
+	/* Add other styling as needed */
+}
+
+.klubbnavn {
+	font-family: 'Handel Gothic Bold', sans-serif;
+}
+
+.location-info {
+	display: flex;
+	flex-direction: column;
+}

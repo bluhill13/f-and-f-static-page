@@ -1,0 +1,74 @@
+.faq-question {
+	cursor: pointer;
+	font-size: 25px;
+	/* Additional styling */
+}
+
+.faq-answer {
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+.faq-title{
+	font-family: "Handel Gothic Bold", sans-serif;
+	font-size: 30px;
+}
+
+.faq-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.faq-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 20px;
+	padding: 1em;
+	width: 100vh;
+	background-color: black;
+	font-size: x-large;
+}
+
+.faq-row-wrapper {
+	
+	.faq-title{
+		text-align: center;
+		width: 100%;
+	}
+	.faq-title h2 {
+		display: inline-block;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin: 0 auto;
+		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	}
+
+	.faq-body {
+		.faq-row {
+			padding-left: 30px;
+			.row-title {
+			font-size: 20px;
+			font-family: "Coolvetica Bold", sans-serif;
+			}
+
+			.row-title-text {
+				font-size: 25px;
+				font-family: "Coolvetica Bold", sans-serif;
+			}
+
+
+			.row-content {
+				padding-left: 30px;
+				padding-right: 30px;
+				margin-bottom: 20px;
+				
+			}
+			.row-content.row-content-text {
+				font-family: "Coolvetica Bold", sans-serif;
+			}
+		}
+	}
+}

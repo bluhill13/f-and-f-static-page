@@ -1,0 +1,56 @@
+{
+  "name": "fightandfitness",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://trenkampsport.no/",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@vitejs/plugin-react-swc": "^3.7.0",
+    "aos": "^3.0.0-beta.6",
+    "axios": "^0.24.0",
+    "react": "^17.0.2",
+    "react-country-flag": "^3.1.0",
+    "react-dom": "^17.0.2",
+    "react-faq-component": "^1.3.4",
+    "react-player": "^2.13.0",
+    "react-router-dom": "^6.2.1",
+    "react-router-hash-link": "^2.4.3",
+    "react-slick": "^0.29.0",
+    "react-transition-group": "^4.4.2",
+    "slick-carousel": "^1.8.1",
+    "vite": "^5.3.1",
+    "vite-plugin-svgr": "^4.2.0",
+    "vite-tsconfig-paths": "^4.3.2",
+    "web-vitals": "^2.1.2"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.7"
+  }
+}
