@@ -8,9 +8,9 @@ const AboutUs = () => {
   return (
     <>
       <MissionSection />
+      <div className="border-t border-gray-300 my-8"></div>
       <Timeline />
-      <HistorySection />
-      <TeamSection />
+      <div className="border-t border-gray-300 my-8"></div>
       <Cta />
     </>
   );

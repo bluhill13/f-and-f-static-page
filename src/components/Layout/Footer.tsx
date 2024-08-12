@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="bg-black">
-      <div className="footer max-w-full mx-auto px-4 sm:px-6 bg-black border-t border-b py-30">
+    <footer className="bg-white">
+      <div className="footer max-w-full mx-auto px-4 sm:px-6 bg-white border-t border-b py-30">
         {/* Top area: Blocks */}
         <div className="grid sm:grid-cols-12 gap-5 py-8 md:py-12 border-t border-gray-200 lg:ml-11">
           {/* 1st block */}
@@ -15,17 +15,17 @@ export default function Footer() {
 
         <div className="flex flex-wrap items-center md:justify-between justify-center mx-auto px-4">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center py-2">
-            <h1 className=" text-white">
+            <h1 className=" text-black">
               <img width={130} className="mx-auto" src={logo} alt="PNG Image" />
               <div className="flex flex-col">
                 <Link
-                  className="text-white pt-6 pb-0"
+                  className="text-black pt-6 pb-0"
                   to="mailto:kundesenter@fightfitness.no"
                 >
                   E-post: kundesenter@fightfitness.no
                 </Link>
                 <Link
-                  className="text-white pt-6 pb-7 break-keep"
+                  className="text-black pt-6 pb-7 break-keep"
                   to="tel:+4795036724"
                 >
                   Telefon: (+47) 950 36 724
