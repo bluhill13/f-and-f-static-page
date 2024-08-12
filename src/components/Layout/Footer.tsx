@@ -1,6 +1,6 @@
-import logo from "../../images/icons/logofnf.png";
-import React from 'react';
-import { Link } from 'react-router-dom';
+import logo from "../../images/icons/logoff.png";
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -16,17 +16,18 @@ export default function Footer() {
         <div className="flex flex-wrap items-center md:justify-between justify-center mx-auto px-4">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center py-2">
             <h1 className=" text-white">
-              <img
-                width={130}
-                className="mx-auto"
-                src={logo}
-                alt="PNG Image"
-              />
+              <img width={130} className="mx-auto" src={logo} alt="PNG Image" />
               <div className="flex flex-col">
-                <Link className="text-white pt-6 pb-0" to="mailto:kundesenter@fightfitness.no">
-                E-post: kundesenter@fightfitness.no
+                <Link
+                  className="text-white pt-6 pb-0"
+                  to="mailto:kundesenter@fightfitness.no"
+                >
+                  E-post: kundesenter@fightfitness.no
                 </Link>
-                <Link className="text-white pt-6 pb-7 break-keep" to="tel:+4795036724">
+                <Link
+                  className="text-white pt-6 pb-7 break-keep"
+                  to="tel:+4795036724"
+                >
                   Telefon: (+47) 950 36 724
                 </Link>
               </div>

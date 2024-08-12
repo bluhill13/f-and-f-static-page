@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../images/icons/logofnf.png";
-import NavBarButton from '@/components/Navbar/NavBarButton';
+import logo from "../../images/icons/logoff.png";
+import NavBarButton from "@/components/Navbar/NavBarButton";
 
 export default function NavBar() {
   const [top, setTop] = useState(true);
@@ -29,13 +29,13 @@ export default function NavBar() {
         <div className="flex flex-row justify-center md:px-12 md:mx-12 items-center text-center font-semibold">
           <Link to="/">
             <h1 className="pl-2 text-blue-900">
-              <img className="grayscale" width={180} src={logo} alt="PNG Image"/>
+              <img className="" width={180} src={logo} alt="PNG Image" />
             </h1>
           </Link>
         </div>
         <div className="group flex flex-col items-center">
           <button
-            className="p-2 rounded-lg lg:hidden text-green-500"
+            className="p-2 rounded-lg lg:hidden text-blue-600"
             onClick={handleClick}
           >
             <svg
@@ -58,11 +58,15 @@ export default function NavBar() {
               )}
             </svg>
           </button>
-          <div className="hidden space-x-6 lg:inline-block p-5">
-            <NavBarButton href={"/omoss"} buttonText={"Om oss"}/>
-            <NavBarButton href={"/tilbud"} buttonText={"Vi tilbyr"}/>
-            <NavBarButton href={"/treningstider"} buttonText={"Treningstider"}/>
-            <NavBarButton href={"/kontakt"} buttonText={"Kontakt Oss"}/>
+          <div className="hidden space-x-11 lg:inline-block p-5">
+            <NavBarButton href={"/"} buttonText={"Forside"} />
+            <NavBarButton href={"/omoss"} buttonText={"Om oss"} />
+            <NavBarButton href={"/tilbud"} buttonText={"Vi tilbyr"} />
+            <NavBarButton
+              href={"/treningstider"}
+              buttonText={"Treningstider"}
+            />
+            <NavBarButton href={"/kontakt"} buttonText={"Kontakt Oss"} />
           </div>
 
           <div
@@ -71,16 +75,18 @@ export default function NavBar() {
             } `}
           >
             <div className="flex flex-col space-y-6">
-              <NavBarButton href={"/omoss"} buttonText={"Om oss"}/>
-              <NavBarButton href={"/tilbud"} buttonText={"Vi tilbyr"}/>
-              <NavBarButton href={"/treningstider"} buttonText={"Treningstider"}/>
-              <NavBarButton href={"/kontakt"} buttonText={"Kontakt Oss"}/>
-              <div/>
+              <NavBarButton href={"/omoss"} buttonText={"Om oss"} />
+              <NavBarButton href={"/tilbud"} buttonText={"Vi tilbyr"} />
+              <NavBarButton
+                href={"/treningstider"}
+                buttonText={"Treningstider"}
+              />
+              <NavBarButton href={"/kontakt"} buttonText={"Kontakt Oss"} />
+              <div />
             </div>
           </div>
         </div>
       </div>
     </nav>
-  )
-    ;
+  );
 }
