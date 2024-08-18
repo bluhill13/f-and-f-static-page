@@ -27,20 +27,20 @@ export default function NavBar() {
   return (
     <nav
       className={`fixed top-0 w-full z-30 transition duration-300 ease-in-out mb-16 ${
-        !top && "bg-white shadow-lg"
+        !top && "bg-blue-700 shadow-lg"
       }`}
     >
       <div className="flex flex-row justify-between items-center py-2">
         <div className="flex flex-row justify-center md:px-12 md:mx-12 items-center text-center font-semibold">
           <Link to="/">
-            <h1 className="pl-2 text-blue-900">
+            <h1 className="pl-2 text-white">
               <img className="" width={180} src={logo} alt="PNG Image" />
             </h1>
           </Link>
         </div>
         <div className="group flex flex-col items-center">
           <button
-            className="p-2 rounded-lg lg:hidden text-blue-600"
+            className="p-2 rounded-lg lg:hidden text-white"
             onClick={handleClick}
           >
             <svg
@@ -68,7 +68,7 @@ export default function NavBar() {
             <div className="relative inline-block text-left">
               <button
                 onClick={toggleDropdown}
-                className="inline-flex justify-center w-full px-4 py-2 text-xl text-blue-900 hover:text-white"
+                className="inline-flex justify-center w-full px-4 py-2 text-xl text-white hover:text-blue-600"
               >
                 Vi tilbyr
                 <svg

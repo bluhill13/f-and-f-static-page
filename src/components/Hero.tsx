@@ -15,19 +15,17 @@ export default function Hero() {
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <h1 className="text-4xl md:text-6xl text-white font-bold mb-8 text-center px-4">
-          VELKOMMEN TIL FIGHT & FITNESS
+          GRATIS PRØVETIME
         </h1>
-        <h2 className="text-2xl md:text-4xl text-white font-bold mb-8 text-center px-4">
-          GRATIS og helt uforpliktende prøveuke!
-        </h2>
+        {/* <h2 className="text-2xl md:text-4xl text-white font-bold mb-8 text-center px-4">
+          Vi tilbyr
+        </h2> */}
         <div>
-          <button
-            className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold"
-          >
-            Kom igang
+          <button className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold">
+            Vi tilbyr
           </button>
         </div>
       </div>
     </div>
   );
-};
+}
