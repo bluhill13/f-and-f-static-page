@@ -6,13 +6,13 @@ import Timeline from "@/components/AboutUs/TimeLine.jsx";
 
 const AboutUs = () => {
   return (
-    <>
+    <div className="mx-5">
       <MissionSection />
       <div className="border-t border-gray-300 my-8"></div>
       <Timeline />
       <div className="border-t border-gray-300 my-8"></div>
       <Cta />
-    </>
+    </div>
   );
 };
 

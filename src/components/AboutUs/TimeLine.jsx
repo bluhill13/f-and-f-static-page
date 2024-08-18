@@ -10,7 +10,7 @@ const Timeline = () => {
             <img
               src={omOssBilde}
               alt="Training session"
-              className="mb-4 rounded-md"
+              className="mb-4 rounded-md "
             />
             <h2 className="text-xl text-black mb-2">Vår visjon</h2>
             <p className="text-lg">

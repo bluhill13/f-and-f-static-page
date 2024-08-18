@@ -4,12 +4,12 @@ const MissionSection = () => {
   return (
     <div className="mt-20 bg-white text-black p-11">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-semibold mb-6">Om oss</h1>
+        <h1 className="text-4xl font-semibold mb-6 pl-10">Om oss</h1>
 
         <div className="flex flex-col md:flex-row md:space-x-8">
           {/* Left Section */}
           <div className="md:w-1/2">
-            <h2 className="text-2xl text-blue-600 mb-4">
+            <h2 className="text-2xl text-blue-600 mb-4 ml-4">
               Dette er Fight & Fitness
             </h2>
             <p className="text-lg mb-4">
